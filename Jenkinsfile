@@ -11,5 +11,6 @@ pipeline {
                     steps {
                        sh 'docker run -d -p 8091:8080 jenktestbuild:1.0'
                     }
+                    }
     }
 }
