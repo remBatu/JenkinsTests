@@ -9,7 +9,7 @@ pipeline {
         }
         stage('b') {
                     steps {
-                       sh 'docker run -d -p 8091:8080 jenktestbuild:1.0'
+                       sh 'docker run -d -p 8075:8075 jenktestbuild:1.0'
                     }
                     }
     }
