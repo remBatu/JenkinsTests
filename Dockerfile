@@ -13,6 +13,6 @@ From openjdk:17-alpine
 
 COPY --from=builder target/JenkinsTests-0.0.1-SNAPSHOT.jar JenkinsTests.jar
 
-EXPOSE 8092
+EXPOSE 8093
 
 CMD ["java", "-jar", "JenkinsTests.jar"]
