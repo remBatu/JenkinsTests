@@ -4,13 +4,8 @@ pipeline {
     stages {
         stage('a') {
             steps {
-                sh 'docker build -t jenktestbuild:1.0 .'
+                sh 'docker-compose up -d'
             }
         }
-        stage('b') {
-                    steps {
-                       sh 'docker run -d -p 8093:8093 jenktestbuild:1.0'
-                    }
-                    }
     }
 }
