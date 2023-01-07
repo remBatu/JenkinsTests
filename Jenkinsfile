@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('wow') {
             steps {
-                sh 'docker-compose up -d'
+                sh '/usr/bin/docker-compose docker-compose up -d'
             }
         }
     }
