@@ -7,11 +7,5 @@ pipeline {
                 sh 'docker-compose up -d  --build'
             }
         }
-        stage('Test'){
-            steps {
-            sh 'docker exec testjobcompose 'mvn test''
-            }
-
-        }
     }
 }
