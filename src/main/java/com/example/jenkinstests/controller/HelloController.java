@@ -8,6 +8,6 @@ public class HelloController {
 
     @RequestMapping("/")
     public String hello(){
-        return "HeLlo WoRLddd!";
+        return "jenkins webhook now works";
     }
 }
